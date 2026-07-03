@@ -46,7 +46,7 @@ if [[ "$OS" == "ubuntu" || "$OS" == "debian" ]]; then
 elif [[ "$OS" == "cachyos" || "$OS" == "arch" ]]; then
     pacman -Sy --noconfirm meson ninja numactl
     echo "For p4c and bmv2 on Arch-based systems, please use an AUR helper like yay:"
-    echo "  yay -S p4c bmv2"
+    echo "  yay -S p4lang-p4c p4lang-bmv2"
 else
     echo "Unsupported OS for automatic dependency installation: $OS"
     exit 1
